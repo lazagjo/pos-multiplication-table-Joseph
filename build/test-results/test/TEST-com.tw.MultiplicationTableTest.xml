@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tw.MultiplicationTableTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-08-30T07:48:01" hostname="MNLITA03-W10" time="0.015">
+<testsuite name="com.tw.MultiplicationTableTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-08-30T07:51:09" hostname="MNLITA03-W10" time="0.017">
   <properties/>
-  <testcase name="should_return_true_when_validate_given_start_4_and_end_100()" classname="com.tw.MultiplicationTableTest" time="0.015">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.tw.MultiplicationTableTest.should_return_true_when_validate_given_start_4_and_end_100(MultiplicationTableTest.java:73)
+  <testcase name="should_return_multiplication_expression_when_multiply_given_multiplicand_2_and_multiplier_3()" classname="com.tw.MultiplicationTableTest" time="0.017">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;2*3=6&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;2*3=6&gt; but was: &lt;null&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:54)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:508)
+	at com.tw.MultiplicationTableTest.should_return_multiplication_expression_when_multiply_given_multiplicand_2_and_multiplier_3(MultiplicationTableTest.java:88)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
