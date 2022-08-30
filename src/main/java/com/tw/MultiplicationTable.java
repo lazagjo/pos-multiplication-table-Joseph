@@ -18,7 +18,14 @@ public class MultiplicationTable {
     }
 
     public String generateTable(int start, int end) {
-        return null;
+        String column = "";
+
+        for(int startNum = start; startNum<=end;startNum++)
+        {
+            column = column + generateLine(start,startNum) + System.lineSeparator();
+        }
+
+        return column.trim();
     }
 
     public String generateLine(int start, int row) {
@@ -26,14 +33,10 @@ public class MultiplicationTable {
 
         for(int startNum = start; startNum<=row;startNum++)
         {
-            rowLine = rowLine + generateSingleExpression(startNum, row);
-
-            if(startNum!=row){
-                rowLine = rowLine + "  ";
-            }
+            rowLine = rowLine + generateSingleExpression(startNum, row) + "  ";
         }
 
-        return rowLine;
+        return rowLine.trim();
     }
 
     public String generateSingleExpression(int multiplicand, int multiplier) {
